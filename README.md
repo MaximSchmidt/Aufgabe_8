@@ -26,16 +26,8 @@ Es sollen 2/3 Varianten verglichen werden:
 | 2        | OpenCV/ CPU (optional)  | optimierte fertige Bibliothek zum Vergleich |
 | 3        | PyOpenCL / GPU |  parallele OpenCL-Version             |
 
-Benchmarking
 
-| Plot       | Darstellung    | Inhalt                                               |
-| ---------- | -------------- | ---------------------------------------------------- |
-| 1 | Histogramm | x = Grauwert, y = Pixelanzahl            |
-| 2 | Laufzeitvergleich | x = Bildgröße, y = Sekunden                |
-| 3 | Speedup | x = Bildgröße, y = CPU-Zeit / PyOpenCL-Zeit |
-
-
-Histogramm
+Histogramme der Grauwerte
 
 <table>
   <tr>
