@@ -35,18 +35,24 @@ Benchmarking
 | 3 | Speedup | x = Bildgröße, y = CPU-Zeit / PyOpenCL-Zeit |
 
 
-Plots
+Histogramm
 
 <table>
   <tr>
-    <td><img src="plots/histogramm.png" width="300"></td>
-    <td><img src="plots/laufzeit.png" width="300"></td>
-    <td><img src="plots/speedup.png" width="300"></td>
+    <td><img src="plots/1.nature_small.png" width="300"></td>
+    <td><img src="plots/2.nature_medium.png" width="300"></td>
   </tr>
   <tr>
-    <td align="center">Histogramm</td>
-    <td align="center">Laufzeit</td>
-    <td align="center">Speedup</td>
+    <td align="center">640×415</td>
+    <td align="center">1024×663</td>
+  </tr>
+  <tr>
+    <td><img src="plots/3.nature_large.png" width="300"></td>
+    <td><img src="plots/4.nature_mega.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">1280×829</td>
+    <td align="center">2048×1327</td>
   </tr>
 </table>
 
