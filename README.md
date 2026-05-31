@@ -34,9 +34,9 @@ a. + b.
 <table>
   <tr>
     <td><img src="images_input/1.nature_small.jpeg" width="300"></td>
-    <td align="center" width="20">-></td>
+    <td align="center" width="20">></td>
     <td><img src="images_output/8a.png" width="300"></td>
-    <td align="center" width="20">-></td>
+    <td align="center" width="20">></td>
     <td><img src="images_output/8b.png" width="300"></td>
   </tr>
   <tr>
