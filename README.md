@@ -80,20 +80,28 @@ d.
     <td align="center">Laufzeitvergleich CPU vs. PyOpenCL</td>
     <td align="center">Speedup CPU vs. PyOpenCL</td>
   </tr>
+  <tr>
+    <td width="50%"><img src="images_output/runtime2.png" width="100%"></td>
+    <td width="50%"><img src="images_output/speedup2.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
+    <td align="center">Speedup CPU vs. PyOpenCL und OpenCV</td>
+  </tr>
 </table>
 
 
 
-| Laptop   | Bildgröße | CPU-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit | Speedup |
-| -------- | --------: | -------: | ------------: | ----------: | ------: |
-| Laptop 1 |   640×415 | 0.001719 | 0.000930 | – | 1.847721 |
-| Laptop 1 |  1024×663 | 0.004899 | 0.003035 | – | 1.614145 |
-| Laptop 1 |  1280×829 | 0.032464 | 0.006912 | – | 4.696922 |
-| Laptop 1 | 2048×1327 | 0.081066 | 0.016662 | – | 4.865241 |
-| Laptop 2 |   640×415 |        … |             … |           … |       … |
-| Laptop 2 |  1024×663 |        … |             … |           … |       … |
-| Laptop 2 |  1280×829 |        … |             … |           … |       … |
-| Laptop 2 | 2048×1327 |        … |             … |           … |       … |
+| Laptop | Bildgröße | CPU-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit in s | Speedup PyOpenCL | Speedup OpenCV |
+| ------ | --------: | ------------: | -----------------: | ---------------: | ----------------: | -------------: |
+| Laptop 1 | 640×415 | 0.001519 | 0.000843 | 0.000266 | 1.803074 | 5.717592 |
+| Laptop 1 | 1024×663 | 0.004478 | 0.003081 | 0.000389 | 1.453387 | 11.498905 |
+| Laptop 1 | 1280×829 | 0.036199 | 0.006760 | 0.000560 | 5.354889 | 64.600783 |
+| Laptop 1 | 2048×1327 | 0.080978 | 0.014617 | 0.001083 | 5.539958 | 74.748139 |
+| Laptop 2 | 640×415 | … | … | … | … | … |
+| Laptop 2 | 1024×663 | … | … | … | … | … |
+| Laptop 2 | 1280×829 | … | … | … | … | … |
+| Laptop 2 | 2048×1327 | … | … | … | … | … |
 
 ## Interpretation
 
@@ -125,7 +133,11 @@ xxxxxxx
 
 ## License  
 
+This project is licensed under the MIT License.
 
-## Acknowledgments 
+## Acknowledgments
+
+https://documen.tician.de/pyopencl/index.html
+https://opencv-tutorial.readthedocs.io/en/latest/
 
 
