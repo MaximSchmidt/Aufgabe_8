@@ -7,6 +7,7 @@ Aufgaben des Projekts sind:
 - a. Laden Sie ein RGB-Bild und wandeln Sie es in ein Graustufenbild um.
 - b. Passen Sie anschließend Helligkeit und Kontrast des Bildes an.
 - c. Berechnen Sie zum Schluss das Histogramm der Grauwerte und stellen Sie es geeignet dar
+- (d. Laufzeit und Speedup verlgleichen)
 
 Die Aufgaben werden auf 2 Laptops mit unterschiedlichen Specs ausgeführt:
 
@@ -17,7 +18,7 @@ Die Aufgaben werden auf 2 Laptops mit unterschiedlichen Specs ausgeführt:
 2. Laptop: xxx
 
 
-Es sollen 2/3 Varianten verglichen werden:
+Es werden 3 Varianten verglichen werden:
 
 
 | Variante | Name                 | Aufgabe                                   |
@@ -26,21 +27,41 @@ Es sollen 2/3 Varianten verglichen werden:
 | 2        | OpenCV/ CPU |  Bibliothek zum Vergleich |
 | 3        | PyOpenCL / GPU |  parallele OpenCL-Version             |
 
+## Ergebnisse:
 
-Histogramme der Grauwerte:
+a. + b.
 
 <table>
   <tr>
-    <td><img src="plots/1.nature_small.png" width="300"></td>
-    <td><img src="plots/2.nature_medium.png" width="300"></td>
+    <td><img src="images_input/1.nature_small.jpeg" width="300"></td>
+    <td align="center" width="20">-></td>
+    <td><img src="images_output/8a.png" width="300"></td>
+    <td align="center" width="20">-></td>
+    <td><img src="images_output/8b.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">Originalbild</td>
+    <td></td>
+    <td align="center">8a: Graustufenbild</td>
+    <td></td>
+    <td align="center">8b: Helligkeit/Kontrast erhöht</td>
+  </tr>
+</table>
+
+c.
+
+<table>
+  <tr>
+    <td><img src="images_output/1.nature_small.png" width="300"></td>
+    <td><img src="images_output/2.nature_medium.png" width="300"></td>
   </tr>
   <tr>
     <td align="center">640×415</td>
     <td align="center">1024×663</td>
   </tr>
   <tr>
-    <td><img src="plots/3.nature_large.png" width="300"></td>
-    <td><img src="plots/4.nature_mega.png" width="300"></td>
+    <td><img src="images_output/3.nature_large.png" width="300"></td>
+    <td><img src="images_output/4.nature_mega.png" width="300"></td>
   </tr>
   <tr>
     <td align="center">1280×829</td>
@@ -48,12 +69,12 @@ Histogramme der Grauwerte:
   </tr>
 </table>
 
-Ergebnisse:
+d.
 
 <table>
   <tr>
-    <td><img src="plots/runtime.png" width="450"></td>
-    <td><img src="plots/speedup.png" width="450"></td>
+    <td><img src="images_output/runtime.png" width="450"></td>
+    <td><img src="images_output/speedup.png" width="450"></td>
   </tr>
   <tr>
     <td align="center">Laufzeitvergleich CPU vs. PyOpenCL</td>
@@ -73,6 +94,8 @@ Ergebnisse:
 | Laptop 2 |  1024×663 |        … |             … |           … |       … |
 | Laptop 2 |  1280×829 |        … |             … |           … |       … |
 | Laptop 2 | 2048×1327 |        … |             … |           … |       … |
+
+## Interpretation
 
 
 ## Getting Started
