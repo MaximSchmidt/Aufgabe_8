@@ -31,13 +31,13 @@ Es werden 3 Varianten verglichen werden:
 
 a. + b.
 
-<table>
+<table width="100%">
   <tr>
-    <td><img src="images_input/1.nature_small.jpeg" width="300"></td>
-    <td align="center" width="20">></td>
-    <td><img src="images_output/8a.png" width="300"></td>
-    <td align="center" width="20">></td>
-    <td><img src="images_output/8b.png" width="300"></td>
+    <td width="30%"><img src="images_input/1.nature_small.jpeg" width="100%"></td>
+    <td align="center" width="5%">></td>
+    <td width="30%"><img src="images_output/8a.png" width="100%"></td>
+    <td align="center" width="5%">></td>
+    <td width="30%"><img src="images_output/8b.png" width="100%"></td>
   </tr>
   <tr>
     <td align="center">Originalbild</td>
@@ -50,18 +50,18 @@ a. + b.
 
 c.
 
-<table>
+<table width="100%">
   <tr>
-    <td><img src="images_output/1.nature_small.png" width="300"></td>
-    <td><img src="images_output/2.nature_medium.png" width="300"></td>
+    <td width="50%"><img src="images_output/1.nature_small.png" width="100%"></td>
+    <td width="50%"><img src="images_output/2.nature_medium.png" width="100%"></td>
   </tr>
   <tr>
     <td align="center">640×415</td>
     <td align="center">1024×663</td>
   </tr>
   <tr>
-    <td><img src="images_output/3.nature_large.png" width="300"></td>
-    <td><img src="images_output/4.nature_mega.png" width="300"></td>
+    <td width="50%"><img src="images_output/3.nature_large.png" width="100%"></td>
+    <td width="50%"><img src="images_output/4.nature_mega.png" width="100%"></td>
   </tr>
   <tr>
     <td align="center">1280×829</td>
@@ -71,14 +71,14 @@ c.
 
 d.
 
-<table>
+<table width="100%">
   <tr>
-    <td><img src="images_output/runtime.png" width="450"></td>
-    <td><img src="images_output/speedup.png" width="450"></td>
+    <td width="50%"><img src="images_output/runtime.png" width="100%"></td>
+    <td width="50%"><img src="images_output/speedup.png" width="100%"></td>
   </tr>
   <tr>
     <td align="center">Laufzeitvergleich CPU vs. PyOpenCL</td>
-    <td align="center">Speedup CPU vs PyOpenCL</td>
+    <td align="center">Speedup CPU vs. PyOpenCL</td>
   </tr>
 </table>
 
