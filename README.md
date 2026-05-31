@@ -23,11 +23,11 @@ Es sollen 2/3 Varianten verglichen werden:
 | Variante | Name                 | Aufgabe                                   |
 | -------- | ----------------------- | ------------------------------------------- |
 | 1        | Baseline / CPU      | Version ohne Parallelisierung       |
-| 2        | OpenCV/ CPU (optional)  | optimierte fertige Bibliothek zum Vergleich |
+| 2        | OpenCV/ CPU |  Bibliothek zum Vergleich |
 | 3        | PyOpenCL / GPU |  parallele OpenCL-Version             |
 
 
-Histogramme der Grauwerte
+Histogramme der Grauwerte:
 
 <table>
   <tr>
@@ -48,13 +48,27 @@ Histogramme der Grauwerte
   </tr>
 </table>
 
+Ergebnisse:
 
-| Laptop   | Bildgröße | CPU-Zeit | PyOpenCL-Zeit | OpenCV-Zeit | Speedup |
+<table>
+  <tr>
+    <td><img src="plots/runtime.png" width="450"></td>
+    <td><img src="plots/speedup.png" width="450"></td>
+  </tr>
+  <tr>
+    <td align="center">Laufzeitvergleich CPU vs. PyOpenCL</td>
+    <td align="center">Speedup CPU vs PyOpenCL</td>
+  </tr>
+</table>
+
+
+
+| Laptop   | Bildgröße | CPU-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit | Speedup |
 | -------- | --------: | -------: | ------------: | ----------: | ------: |
-| Laptop 1 |   640×415 |        … |             … |           … |       … |
-| Laptop 1 |  1024×663 |        … |             … |           … |       … |
-| Laptop 1 |  1280×829 |        … |             … |           … |       … |
-| Laptop 1 | 2048×1327 |        … |             … |           … |       … |
+| Laptop 1 |   640×415 | 0.001719 | 0.000930 | – | 1.847721 |
+| Laptop 1 |  1024×663 | 0.004899 | 0.003035 | – | 1.614145 |
+| Laptop 1 |  1280×829 | 0.032464 | 0.006912 | – | 4.696922 |
+| Laptop 1 | 2048×1327 | 0.081066 | 0.016662 | – | 4.865241 |
 | Laptop 2 |   640×415 |        … |             … |           … |       … |
 | Laptop 2 |  1024×663 |        … |             … |           … |       … |
 | Laptop 2 |  1280×829 |        … |             … |           … |       … |
@@ -70,6 +84,7 @@ Histogramme der Grauwerte
 - Matplotlib
 - PyOpenCL
 - OpenCV
+- (Openpyxl)
 
 ### Installing
 
