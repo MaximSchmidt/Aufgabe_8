@@ -11,11 +11,10 @@ Aufgaben des Projekts sind:
 
 Die Aufgaben werden auf 2 Laptops mit unterschiedlichen Specs ausgeführt:
 
-1. Laptop:
-- Prozessor  Intel(R) Core(TM) Ultra 7 258V, 2200 MHz, 8 Kern(e), 8 logische(r) Prozessor(en)
-- GPU: Intel(R) Arc(™) 140V GPU (16GB)
-
-2. Laptop: xxx
+| Laptop | Prozessor | GPU |
+| ------ | --------- | --- |
+| 1 | Intel(R) Core(TM) Ultra 7 258V, 2200 MHz, 8 Kerne, 8 logische Prozessoren | Intel(R) Arc(TM) 140V GPU, 16 GB |
+| 2 | xxx | xxx |
 
 
 Es werden 3 Varianten verglichen werden:
@@ -24,8 +23,8 @@ Es werden 3 Varianten verglichen werden:
 | Variante | Name                 | Aufgabe                                   |
 | -------- | ----------------------- | ------------------------------------------- |
 | 1        | Baseline / CPU      | Version ohne Parallelisierung       |
-| 2        | OpenCV/ CPU |  Bibliothek zum Vergleich |
-| 3        | PyOpenCL / GPU |  parallele OpenCL-Version             |
+| 2        | OpenCV/ CPU |  optimierte Bibliothek |
+| 3        | PyOpenCL / GPU |  parallele OpenCL Version             |
 
 ## Ergebnisse:
 
@@ -115,7 +114,6 @@ d.
 - Matplotlib
 - PyOpenCL
 - OpenCV
-- (Openpyxl)
 
 ### Installing
 
