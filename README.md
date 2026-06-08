@@ -22,9 +22,9 @@ Es werden 3 Varianten verglichen werden:
 
 | Variante | Name                 | Aufgabe                                   |
 | -------- | ----------------------- | ------------------------------------------- |
-| 1        | Baseline / CPU      | Version ohne Parallelisierung       |
-| 2        | OpenCV/ CPU |  optimierte Bibliothek |
-| 3        | PyOpenCL / GPU |  parallele OpenCL Version             |
+| 1        | Baseline / CPU      |  ohne Parallelisierung       |
+| 2        | OpenCV/ CPU |  optimierte Bibliothek für Bildverarbeitung |
+| 3        | PyOpenCL / GPU |  mit Parallelisierung             |
 
 ## Ergebnisse:
 
@@ -137,5 +137,3 @@ This project is licensed under the MIT License.
 
 https://documen.tician.de/pyopencl/index.html
 https://opencv-tutorial.readthedocs.io/en/latest/
-
-
