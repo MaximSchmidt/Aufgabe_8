@@ -126,7 +126,7 @@ cd
 ## Authors 
 Maxim Schmidt HTW Berlin (M.Sc. Applied Computer Science) Maxim.Schmidt@Student.HTW-Berlin.de
 
-Sarra Malek HTW Berlin (M.Sc. Applied Computer Science) 
+Sarra Malek HTW Berlin (M.Sc. Applied Computer Science) Sarra.Malek@Student.HTW-Berlin.de
 
 ## License  
 
@@ -134,5 +134,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-https://documen.tician.de/pyopencl/index.html
+https://documen.tician.de/pyopencl/index.html </br>
 https://opencv-tutorial.readthedocs.io/en/latest/
