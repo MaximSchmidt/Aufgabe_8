@@ -14,8 +14,7 @@ Die Aufgaben werden auf 2 Laptops mit unterschiedlichen Specs ausgeführt:
 | Laptop | Prozessor | GPU |
 | ------ | --------- | --- |
 | 1 | Intel(R) Core(TM) Ultra 7 258V, 2200 MHz, 8 Kerne, 8 logische Prozessoren | Intel(R) Arc(TM) 140V GPU, 16 GB |
-| 2 | xxx | xxx |
-
+| 2 | Intel(R) Core(TM) i7-10870H CPU @ 2.20 GHz, 8 Kerne, 16 logische Prozessoren | NVIDIA GeForce RTX 3050 Laptop GPU, 4 GB |
 
 Es werden 3 Varianten verglichen werden:
 
@@ -127,7 +126,7 @@ cd
 ## Authors 
 Maxim Schmidt HTW Berlin (M.Sc. Applied Computer Science) Maxim.Schmidt@Student.HTW-Berlin.de
 
-xxxxxxx
+Sarra Malek HTW Berlin (M.Sc. Applied Computer Science) 
 
 ## License  
 
