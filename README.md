@@ -68,23 +68,45 @@ c.
 </table>
 
 d.
+<h3>Laptop 1</h3>
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="images_output/runtime.png" width="100%"></td>
-    <td width="50%"><img src="images_output/speedup.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop1_runtime.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop1_speedup.png" width="100%"></td>
   </tr>
   <tr>
-    <td align="center">Laufzeitvergleich CPU vs. PyOpenCL</td>
-    <td align="center">Speedup CPU vs. PyOpenCL</td>
+    <td align="center">Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL</td>
+    <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL</td>
   </tr>
   <tr>
-    <td width="50%"><img src="images_output/runtime2.png" width="100%"></td>
-    <td width="50%"><img src="images_output/speedup2.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop1_runtime2.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop1_speedup2.png" width="100%"></td>
   </tr>
   <tr>
-    <td align="center">Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
-    <td align="center">Speedup CPU vs. PyOpenCL und OpenCV</td>
+    <td align="center">Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
+    <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL und OpenCV</td>
+  </tr>
+</table>
+
+<h3>Laptop 2</h3>
+
+<table width="100%">
+  <tr>
+    <td width="50%"><img src="images_output/Laptop2_runtime.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop2_speedup.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Laptop 2: Laufzeitvergleich CPU vs. PyOpenCL</td>
+    <td align="center">Laptop 2: Speedup CPU vs. PyOpenCL</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="images_output/Laptop2_runtime2.png" width="100%"></td>
+    <td width="50%"><img src="images_output/Laptop2_speedup2.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Laptop 2: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
+    <td align="center">Laptop 2: Speedup CPU vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
 
