@@ -7,7 +7,7 @@ Aufgaben des Projekts sind:
 - a. Laden Sie ein RGB-Bild und wandeln Sie es in ein Graustufenbild um.
 - b. Passen Sie anschließend Helligkeit und Kontrast des Bildes an.
 - c. Berechnen Sie zum Schluss das Histogramm der Grauwerte und stellen Sie es geeignet dar
-- (d. Laufzeit und Speedup verlgleichen)
+- d. Laufzeit und Speedup vergleichen
 
 Die Aufgaben werden auf 2 Laptops mit unterschiedlichen Specs ausgeführt:
 
@@ -72,19 +72,26 @@ d.
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="images_output/Laptop1_runtime.png" width="100%"></td>
-    <td width="50%"><img src="images_output/Laptop1_speedup.png" width="100%"></td>
+    <td colspan="2" align="center">
+      <img src="images_output/Laptop1_runtime2.png" width="70%">
+    </td>
   </tr>
   <tr>
-    <td align="center">Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL</td>
+    <td colspan="2" align="center">
+      Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV
+    </td>
+  </tr>
+
+  <tr>
+    <td width="50%">
+      <img src="images_output/Laptop1_speedup.png" width="100%">
+    </td>
+    <td width="50%">
+      <img src="images_output/Laptop1_speedup2.png" width="100%">
+    </td>
+  </tr>
+  <tr>
     <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL</td>
-  </tr>
-  <tr>
-    <td width="50%"><img src="images_output/Laptop1_runtime2.png" width="100%"></td>
-    <td width="50%"><img src="images_output/Laptop1_speedup2.png" width="100%"></td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
     <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
