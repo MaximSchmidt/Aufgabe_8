@@ -68,69 +68,68 @@ c.
 </table>
 
 d.
-<h3>Laptop 1</h3>
+<h3>Laufzeitvergleich</h3>
 
 <table width="100%">
   <tr>
-    <td align="center">
-      <img src="images_output/Laptop1_runtime2.png" width="70%">
+    <td align="center" width="50%">
+      <img src="images_output/Laptop1_runtime2.png" width="90%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images_output/Laptop2_runtime2.png" width="90%">
     </td>
   </tr>
   <tr>
-    <td align="center">Laptop 1: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV</td>
-  </tr>
-
-  <tr>
     <td align="center">
-      <img src="images_output/Laptop1_speedup.png" width="70%">
+      Laptop 1: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV
     </td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 1: Speedup Baseline vs. PyOpenCL</td>
-  </tr>
-
-  <tr>
     <td align="center">
-      <img src="images_output/Laptop1_speedup2.png" width="70%">
+      Laptop 2: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV
     </td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 1: Speedup Baseline vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
 
-<h3>Laptop 2</h3>
+<h3>Speedup: Baseline vs. PyOpenCL</h3>
 
 <table width="100%">
   <tr>
-    <td align="center">
-      <img src="images_output/Laptop2_runtime2.png" width="70%">
+    <td align="center" width="50%">
+      <img src="images_output/Laptop1_speedup.png" width="90%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images_output/Laptop2_speedup.png" width="90%">
     </td>
   </tr>
   <tr>
-    <td align="center">Laptop 2: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV</td>
-  </tr>
-
-  <tr>
     <td align="center">
-      <img src="images_output/Laptop2_speedup.png" width="70%">
+      Laptop 1: Speedup Baseline vs. PyOpenCL
     </td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 2: Speedup Baseline vs. PyOpenCL</td>
-  </tr>
-
-  <tr>
     <td align="center">
-      <img src="images_output/Laptop2_speedup2.png" width="70%">
+      Laptop 2: Speedup Baseline vs. PyOpenCL
     </td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 2: Speedup Baseline vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
 
+<h3>Speedup: Baseline vs. PyOpenCL und OpenCV</h3>
 
+<table width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="images_output/Laptop1_speedup2.png" width="90%">
+    </td>
+    <td align="center" width="50%">
+      <img src="images_output/Laptop2_speedup2.png" width="90%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      Laptop 1: Speedup Baseline vs. PyOpenCL und OpenCV
+    </td>
+    <td align="center">
+      Laptop 2: Speedup Baseline vs. PyOpenCL und OpenCV
+    </td>
+  </tr>
+</table>
 
 | Laptop | Bildgröße | Baseline-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit in s | Speedup PyOpenCL | Speedup OpenCV |
 | ------ | --------: | ------------: | -----------------: | ---------------: | ----------------: | -------------: |
