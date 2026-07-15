@@ -22,7 +22,7 @@ Es werden 3 Varianten verglichen werden:
 | Variante | Name                 | Aufgabe                                   |
 | -------- | ----------------------- | ------------------------------------------- |
 | 1        | Baseline / CPU      |  ohne Parallelisierung       |
-| 2        | OpenCV/ CPU |  optimierte Bibliothek für Bildverarbeitung |
+| 2        | OpenCV/ CPU |  optimierte C++ Bibliothek für Bildverarbeitung |
 | 3        | PyOpenCL / GPU |  mit Parallelisierung             |
 
 ## Ergebnisse:
@@ -72,27 +72,30 @@ d.
 
 <table width="100%">
   <tr>
-    <td colspan="2" align="center">
+    <td align="center">
       <img src="images_output/Laptop1_runtime2.png" width="70%">
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
-      Laptop 1: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV
-    </td>
+    <td align="center">Laptop 1: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV</td>
   </tr>
 
   <tr>
-    <td width="50%">
-      <img src="images_output/Laptop1_speedup.png" width="100%">
-    </td>
-    <td width="50%">
-      <img src="images_output/Laptop1_speedup2.png" width="100%">
+    <td align="center">
+      <img src="images_output/Laptop1_speedup.png" width="70%">
     </td>
   </tr>
   <tr>
-    <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL</td>
-    <td align="center">Laptop 1: Speedup CPU vs. PyOpenCL und OpenCV</td>
+    <td align="center">Laptop 1: Speedup Baseline vs. PyOpenCL</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="images_output/Laptop1_speedup2.png" width="70%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Laptop 1: Speedup Baseline vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
 
@@ -100,20 +103,39 @@ d.
 
 <table width="100%">
   <tr>
-    <td width="50%"><img src="images_output/Laptop2_runtime.png" width="100%"></td>
-    <td width="50%"><img src="images_output/Laptop2_speedup.png" width="100%"></td>
+    <td align="center">
+      <img src="images_output/Laptop2_runtime.png" width="70%">
+    </td>
   </tr>
   <tr>
-    <td align="center">Laptop 2: Laufzeitvergleich CPU vs. PyOpenCL</td>
-    <td align="center">Laptop 2: Speedup CPU vs. PyOpenCL</td>
+    <td align="center">Laptop 2: Laufzeitvergleich Baseline vs. PyOpenCL</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="images_output/Laptop2_runtime2.png" width="70%">
+    </td>
   </tr>
   <tr>
-    <td width="50%"><img src="images_output/Laptop2_runtime2.png" width="100%"></td>
-    <td width="50%"><img src="images_output/Laptop2_speedup2.png" width="100%"></td>
+    <td align="center">Laptop 2: Laufzeitvergleich Baseline vs. PyOpenCL vs. OpenCV</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="images_output/Laptop2_speedup.png" width="70%">
+    </td>
   </tr>
   <tr>
-    <td align="center">Laptop 2: Laufzeitvergleich CPU vs. PyOpenCL vs. OpenCV</td>
-    <td align="center">Laptop 2: Speedup CPU vs. PyOpenCL und OpenCV</td>
+    <td align="center">Laptop 2: Speedup Baseline vs. PyOpenCL</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="images_output/Laptop2_speedup2.png" width="70%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Laptop 2: Speedup Baseline vs. PyOpenCL und OpenCV</td>
   </tr>
 </table>
 
@@ -121,10 +143,10 @@ d.
 
 | Laptop | Bildgröße | CPU-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit in s | Speedup PyOpenCL | Speedup OpenCV |
 | ------ | --------: | ------------: | -----------------: | ---------------: | ----------------: | -------------: |
-| Laptop 1 | 640×415 | 0.001519 | 0.000843 | 0.000266 | 1.803074 | 5.717592 |
-| Laptop 1 | 1024×663 | 0.004478 | 0.003081 | 0.000389 | 1.453387 | 11.498905 |
-| Laptop 1 | 1280×829 | 0.036199 | 0.006760 | 0.000560 | 5.354889 | 64.600783 |
-| Laptop 1 | 2048×1327 | 0.080978 | 0.014617 | 0.001083 | 5.539958 | 74.748139 |
+| Laptop 1 | 640×415 | 0.001495 | 0.002702 | 0.000285 | 0.553358 | 5.245396 |
+| Laptop 1 | 1024×663 | 0.004629 | 0.007546 | 0.000585 | 0.613468 | 7.912068 |
+| Laptop 1 | 1280×829 | 0.036434 | 0.010217 | 0.000878 | 3.566122 | 41.498952 |
+| Laptop 1 | 2048×1327 | 0.098643 | 0.026186 | 0.001086 | 3.766991 | 90.818942 |
 | Laptop 2 | 640×415 | 0.006263 | 0.003250 | 0.000221 | 1.927281 | 28.357249 |
 | Laptop 2 | 1024×663 | 0.015714 | 0.005481 | 0.000324 | 2.866923 | 48.536677 |
 | Laptop 2 | 1280×829 | 0.026051 | 0.006350 | 0.001158 | 4.102779 | 22.491517 |
@@ -133,7 +155,7 @@ d.
 ## Interpretation
 Die Ergebnisse zeigen deutliche Unterschiede zwischen den drei Implementierungsvarianten.
 
-- Die einfache CPU-Baseline ist die langsamste Variante, besonders bei größeren Bildern. Das ist zu erwarten, weil das Bild Schritt für Schritt mit NumPy-Operationen auf der CPU verarbeitet wird. Dabei werden große Arrays mehrfach gelesen und geschrieben, was zusätzliche Speicherzugriffe und Laufzeit verursacht.
+- Die Baseline ist die langsamste Variante, besonders bei größeren Bildern. Das ist zu erwarten, weil das Bild Schritt für Schritt mit NumPy-Operationen auf der CPU verarbeitet wird. Dabei werden große Arrays mehrfach gelesen und geschrieben, was zusätzliche Speicherzugriffe und Laufzeit verursacht.
 
 - PyOpenCL ist auf beiden Laptops schneller als die Baseline. Der Vorteil wird vor allem bei größeren Bildern sichtbar, weil mehr Pixel parallel auf der GPU verarbeitet werden können. Gleichzeitig hat PyOpenCL aber auch Overhead. Die Bilddaten müssen in ein eindimensionales Array umgewandelt, in GPU-Buffer kopiert, vom OpenCL-Kernel verarbeitet und anschließend wieder in den Arbeitsspeicher zurückkopiert werden. Bei kleinen Bildern wirkt sich dieser Overhead stärker aus, wodurch der Speedup kleiner sein kann. Ein zentraler Punkt war, dass in einer früheren Version das Histogramm (8c) noch mit `np.bincount` auf der CPU berechnet wurde, obwohl 8a und 8b bereits auf der GPU liefen. Nach der Umstellung auf einen eigenen OpenCL-Kernel mit atomaren Operationen (`atomic_inc`) wird nun auch das Histogramm vollständig parallel auf der GPU berechnet. Dadurch stieg der Speedup von PyOpenCL gegenüber der Baseline deutlich an, besonders bei größeren Bildern (z. B. Laptop 2, 2048×1327: Speedup von 3.60 auf 6.46), da weniger Daten zwischen CPU und GPU transferiert werden mussten und der CPU-Anteil im PyOpenCL-Pfad entfiel.
 
