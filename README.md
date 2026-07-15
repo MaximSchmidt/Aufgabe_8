@@ -104,15 +104,6 @@ d.
 <table width="100%">
   <tr>
     <td align="center">
-      <img src="images_output/Laptop2_runtime.png" width="70%">
-    </td>
-  </tr>
-  <tr>
-    <td align="center">Laptop 2: Laufzeitvergleich Baseline vs. PyOpenCL</td>
-  </tr>
-
-  <tr>
-    <td align="center">
       <img src="images_output/Laptop2_runtime2.png" width="70%">
     </td>
   </tr>
