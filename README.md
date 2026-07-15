@@ -125,17 +125,17 @@ d.
 | Laptop 1 | 1024×663 | 0.004478 | 0.003081 | 0.000389 | 1.453387 | 11.498905 |
 | Laptop 1 | 1280×829 | 0.036199 | 0.006760 | 0.000560 | 5.354889 | 64.600783 |
 | Laptop 1 | 2048×1327 | 0.080978 | 0.014617 | 0.001083 | 5.539958 | 74.748139 |
-| Laptop 2 | 640×415 | 0.006349 | 0.004885 | 0.000225 | 1.299629 | 28.255228 |
-| Laptop 2 | 1024×663 | 0.016662 | 0.007390 | 0.000326 | 2.254660 | 51.063590 |
-| Laptop 2 | 1280×829 | 0.026199 | 0.010545 | 0.001247 | 2.484481 | 21.004249 |
-| Laptop 2 | 2048×1327 | 0.070870 | 0.019683 | 0.002698 | 3.600474 | 26.264106 |
+| Laptop 2 | 640×415 | 0.006263 | 0.003250 | 0.000221 | 1.927281 | 28.357249 |
+| Laptop 2 | 1024×663 | 0.015714 | 0.005481 | 0.000324 | 2.866923 | 48.536677 |
+| Laptop 2 | 1280×829 | 0.026051 | 0.006350 | 0.001158 | 4.102779 | 22.491517 |
+| Laptop 2 | 2048×1327 | 0.065415 | 0.010128 | 0.002656 | 6.458996 | 24.626397 |
 
 ## Interpretation
 Die Ergebnisse zeigen deutliche Unterschiede zwischen den drei Implementierungsvarianten.
 
 - Die einfache CPU-Baseline ist die langsamste Variante, besonders bei größeren Bildern. Das ist zu erwarten, weil das Bild Schritt für Schritt mit NumPy-Operationen auf der CPU verarbeitet wird. Dabei werden große Arrays mehrfach gelesen und geschrieben, was zusätzliche Speicherzugriffe und Laufzeit verursacht.
 
-- PyOpenCL ist auf beiden Laptops schneller als die Baseline. Der Vorteil wird vor allem bei größeren Bildern sichtbar, weil mehr Pixel parallel auf der GPU verarbeitet werden können. Gleichzeitig hat PyOpenCL aber auch Overhead. Die Bilddaten müssen in ein eindimensionales Array umgewandelt, in GPU-Buffer kopiert, vom OpenCL-Kernel verarbeitet und anschließend wieder in den Arbeitsspeicher zurückkopiert werden. Bei kleinen Bildern wirkt sich dieser Overhead stärker aus, wodurch der Speedup kleiner sein kann.
+- PyOpenCL ist auf beiden Laptops schneller als die Baseline. Der Vorteil wird vor allem bei größeren Bildern sichtbar, weil mehr Pixel parallel auf der GPU verarbeitet werden können. Gleichzeitig hat PyOpenCL aber auch Overhead. Die Bilddaten müssen in ein eindimensionales Array umgewandelt, in GPU-Buffer kopiert, vom OpenCL-Kernel verarbeitet und anschließend wieder in den Arbeitsspeicher zurückkopiert werden. Bei kleinen Bildern wirkt sich dieser Overhead stärker aus, wodurch der Speedup kleiner sein kann. Ein zentraler Punkt war, dass in einer früheren Version das Histogramm (8c) noch mit `np.bincount` auf der CPU berechnet wurde, obwohl 8a und 8b bereits auf der GPU liefen. Nach der Umstellung auf einen eigenen OpenCL-Kernel mit atomaren Operationen (`atomic_inc`) wird nun auch das Histogramm vollständig parallel auf der GPU berechnet. Dadurch stieg der Speedup von PyOpenCL gegenüber der Baseline deutlich an, besonders bei größeren Bildern (z. B. Laptop 2, 2048×1327: Speedup von 3.60 auf 6.46), da weniger Daten zwischen CPU und GPU transferiert werden mussten und der CPU-Anteil im PyOpenCL-Pfad entfiel.
 
 - OpenCV ist in fast allen Messungen die schnellste Variante. Das liegt daran, dass OpenCV stark optimierte native C/C++ Funktionen für Bildverarbeitung verwendet. Diese Funktionen sind deutlich effizienter als die einfache eigene CPU-Implementierung und vermeiden außerdem einen großen Teil des manuellen GPU-Overheads von PyOpenCL.
 
