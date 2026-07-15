@@ -141,7 +141,7 @@ d.
 
 
 
-| Laptop | Bildgröße | CPU-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit in s | Speedup PyOpenCL | Speedup OpenCV |
+| Laptop | Bildgröße | Baseline-Zeit in s | PyOpenCL-Zeit in s | OpenCV-Zeit in s | Speedup PyOpenCL | Speedup OpenCV |
 | ------ | --------: | ------------: | -----------------: | ---------------: | ----------------: | -------------: |
 | Laptop 1 | 640×415 | 0.001549 | 0.003929 | 0.000269 | 0.394116 | 5.758647 |
 | Laptop 1 | 1024×663 | 0.004687 | 0.009142 | 0.000599 | 0.512666 | 7.820137 |
